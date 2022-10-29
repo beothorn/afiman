@@ -30,3 +30,18 @@ Delete files bigger than 2g
 ```
 push d"~/imgs" tofiles filter "size>2g" del
 ```
+
+Find duplicated files
+
+```
+push d"~/imgs" tofiles dupes print
+```
+
+Replace text
+
+```
+push f"~/foo.txt" f"~/bar.txt" reg "s/xxx/yyy/g"
+```
+
+
+
