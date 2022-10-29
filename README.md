@@ -37,6 +37,12 @@ Find duplicated files
 push d"~/imgs" tofiles dupes print
 ```
 
+Find duplicated files, delete first
+
+```
+push d"~/imgs" tofiles dupes loop del pop endLoop
+```
+
 Replace text
 
 ```
