@@ -26,7 +26,6 @@ push d"~/imgs" d"~/imgs2" tofiles print
 
 Delete files bigger than 2g
 
-
 ```
 push d"~/imgs" tofiles filter "size>2g" del
 ```
@@ -46,8 +45,13 @@ push d"~/imgs" tofiles dupes loop del pop endLoop
 Replace text
 
 ```
-push f"~/foo.txt" f"~/bar.txt" reg "s/xxx/yyy/g"
+push f"~/foo.txt" f"~/bar.txt" regin "s/xxx/yyy/g"
 ```
 
+Replace in file name 
+
+```
+push d"~/foo.txt" f"~/far.txt" regname "s/f/b/g"
+```
 
 
