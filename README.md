@@ -15,43 +15,50 @@ create folder and join all folders on the directory
 pop
 delete all on stack
 
-push d"~/imgs" d"~/imgs2" d"~/allImgs" join pop del
+push "~/imgs" "~/imgs2" "~/allImgs" join pop del
 ```
 
 Print all files from two directories
 
 ```
-push d"~/imgs" d"~/imgs2" tofiles print
+push "~/imgs" "~/imgs2" tofiles print
 ```
 
 Delete files bigger than 2g
 
 ```
-push d"~/imgs" tofiles filter "size>2g" del
+push "~/imgs" tofiles filter "size>2g" del
 ```
 
 Find duplicated files
 
 ```
-push d"~/imgs" tofiles dupes print
+push "~/imgs" tofiles dupes print
 ```
 
 Find duplicated files, delete first
 
 ```
-push d"~/imgs" tofiles dupes loop del pop endLoop
+push "~/imgs" tofiles dupes loop del pop endLoop
 ```
 
 Replace text
 
 ```
-push f"~/foo.txt" f"~/bar.txt" regin "s/xxx/yyy/g"
+push "~/foo.txt" "~/bar.txt" regin "s/xxx/yyy/g"
 ```
 
 Replace in file name 
 
 ```
-push d"~/foo.txt" f"~/far.txt" regname "s/f/b/g"
+push "~/foo.txt" "~/far.txt" regname "s/f/b/g"
 ```
+
+Print all file properties available for filtering
+
+```
+push "~/foo.txt" toprops print
+```
+
 
 
